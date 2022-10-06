@@ -9,15 +9,16 @@ import java.util.Scanner;
     int i = sc.nextInt();
     System.out.println("Enter 2nd Value :");
     int j = sc.nextInt(); 
+    program obj = new program();
   add(i, j);
-  sub(i, j);
+  obj.sub(i, j);
   mul(i, j);
   }
  static void add(int a , int b) {
      long c = a + b ;
     System.out.println("Sum of both values is : " + c );
   }
- static void sub(int a , int b) {
+  void sub(int a , int b) {
     long c = a - b ;
    System.out.println("Subtraction of both values is : " + c );
  }
